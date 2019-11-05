@@ -31,8 +31,8 @@ class App < Sinatra::Base
     # subtracts the second number from the first
     # multiples two numbers together
     # divides the first number by the second number
-    @num1 = params[:number1].to_i
-    @num2 = params[:number2].to_i
+    @num1 = params[:number1]
+    @num2 = params[:number2]
     @operation = params[:operation]
 
     @num1.send(@operation, @num2)
