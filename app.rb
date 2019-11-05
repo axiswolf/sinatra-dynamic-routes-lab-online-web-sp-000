@@ -20,7 +20,7 @@ class App < Sinatra::Base
     @num1 = params[:number].to_i
     @phrase1*@num1
   end
-  
+
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     # concatenates the words and adds a period
     "#{params[:word1] params[:word2] params[:word3] params[:word4] params[:word5]}"
