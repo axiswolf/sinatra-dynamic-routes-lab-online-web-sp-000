@@ -25,7 +25,7 @@ class App < Sinatra::Base
     # concatenates the words and adds a period
     "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
   end
-  
+
   get '/:operation/:number1/:number2' do
     # adds two numbers together
     # subtracts the second number from the first
