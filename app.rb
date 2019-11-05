@@ -31,12 +31,12 @@ class App < Sinatra::Base
     # subtracts the second number from the first
     # multiples two numbers together
     # divides the first number by the second number
-    @number1 = params[:number1].to_i
-    @number2 = params[:number2].to_i
+    @number1 = params[:number1]
+    @number2 = params[:number2]
     @operation = params[:operation]
       if @operation == "add"
         @number1 + @number2
-      elsif @operation =="subtract"
+      elsif @operation == "subtract"
         @number1 - @number2
       elsif @operation == "divide"
         @number1 / @number2
