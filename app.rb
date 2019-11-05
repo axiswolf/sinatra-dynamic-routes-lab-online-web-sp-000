@@ -23,7 +23,7 @@ class App < Sinatra::Base
     #   puts "#{@phrase1}"
     #   times += 1
     # end
-    @num1.times do
+    num2.times do
       "#{@phrase1}"
     end
   end
