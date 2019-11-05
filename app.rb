@@ -18,7 +18,6 @@ class App < Sinatra::Base
     # repeat phrase n times
     @phrase1 = params[:phrase]
     @num1 = params[:number].to_i
-    num2 = @num1.to_i
     # until times == @num1 do
     #   puts "#{@phrase1}"
     #   times += 1
