@@ -18,7 +18,7 @@ class App < Sinatra::Base
     # repeat phrase n times
     @phrase1 = params[:phrase]
     @num1 = params[:number].to_i
-    @phrase1*@num1
+    @phrase1 * @num1
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
