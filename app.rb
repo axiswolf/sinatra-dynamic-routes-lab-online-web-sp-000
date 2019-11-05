@@ -32,7 +32,7 @@ class App < Sinatra::Base
     @word3 = params[:word3]
     @word4 = params[:word4]
     @word5 = params[:word5]
-    
+
   end
 
   get '/:operation/:number1/:number2' do
