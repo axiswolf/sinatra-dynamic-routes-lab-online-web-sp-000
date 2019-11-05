@@ -25,13 +25,17 @@ class App < Sinatra::Base
     # concatenates the words and adds a period
     "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
   end
-  #
-  # get '/:operation/:number1/:number2' do
-  #   # adds two numbers together
-  #   # subtracts the second number from the first
-  #   # multiples two numbers together
-  #   # divides the first number by the second number
-  #
-  # end
+  
+  get '/:operation/:number1/:number2' do
+    # adds two numbers together
+    # subtracts the second number from the first
+    # multiples two numbers together
+    # divides the first number by the second number
+    @num1 = params[:number1].to_i
+    @num2 = params[:number2].to_i
+    @operation = params[:operation]
+
+    "#{@operation.send(@num1, @num2)}"
+  end
 
 end
