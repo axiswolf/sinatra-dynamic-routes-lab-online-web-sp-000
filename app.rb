@@ -18,14 +18,7 @@ class App < Sinatra::Base
     # repeat phrase n times
     @phrase1 = params[:phrase]
     @num1 = params[:number]
-    num2 = @num1.to_i
-    # until times == @num1 do
-    #   puts "#{@phrase1}"
-    #   times += 1
-    # end
-    num2.times do
-      "#{@phrase1}"
-    end
+    erb :say
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
