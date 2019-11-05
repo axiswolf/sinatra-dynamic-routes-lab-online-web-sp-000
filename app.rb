@@ -16,11 +16,11 @@ class App < Sinatra::Base
 
   get '/say/:number/:phrase' do
     # repeat phrase n times
-    @phrase = params[:phrase]
+    @phrase1 = params[:phrase]
     @number = params[:number].to_i
     times = 0
     until times == @number do
-      "#{@phrase}"
+      "#{@phrase1}"
       times += 1
     end
   end
